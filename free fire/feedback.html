@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width:100%;
+  padding: 5px;
+  border: 1px solid rgb(253, 251, 251);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: rgb(20, 17, 17);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: red;
+}
+
+.container {
+  border-radius: 2px;
+  background-image: url(images/free16.jpg);
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+
+<h3>Feedback Form</h3><br>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="Email">Email Id</label>
+    <input type="text" id="Email" name="Email" placeholder="Email id..">
+
+<label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="Australia">Australia</option>
+      <option value="India">India</option>
+      <option value="Usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+    <button type="submit" height="20px" > 
+    <a href="main.html">Submit</a></button>
+  </form>
+</div>
+
+</body>
+</html>

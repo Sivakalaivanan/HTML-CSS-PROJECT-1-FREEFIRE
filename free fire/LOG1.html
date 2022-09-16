@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <h1>Login form </h1><BR>
+    <style>
+        body{ text-align: left;
+            background-image: url("images/FREE4.WEBP");
+            background-repeat:no-repeat;
+            background-size: cover;
+        }  
+        form{
+            text-align: left;
+        }
+        </style>
+        <script>
+            function validateForm()
+            {
+                let x=document.forms["form1"]["fname"].value;
+                if(x=="") {
+                    alert(" Name Must be filled out"); 
+                    return false
+                }
+            }
+                </script>
+                </head>
+ <body>
+<form action="main.html" name="form1" onsubmit="validateform()" method="post">
+    Username*:
+    <input type="text"name="fname" ><br><BR>
+    Password*:</a>
+    <input type="password" name="fname"><br><BR>
+        <button id="myBtn"> submit</button>
+        <script>
+        document.getElementById("myBtn").addEventListener("click",function() {
+             alert("This Will Lead to Home Page" );});            
+        </script><br><br>
+        <a href="forget pass2.html"> Forget Password?</a><br><br><BR>
+NO Account Yet!<a href="NEW ACCOUNT3.html"> New Account Creation ?</a><br><br></form>
+</body>
+</html>
